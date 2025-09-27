@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ctext {
+    color: #00bfff;
+}
+
+.page {
+    opacity: 0;
+    transform: scale(0.95);
+    filter: blur(4px) brightness(0.9);
+    transition:
+        opacity 1s ease,
+        transform 1s ease,
+        filter 1s ease;
+}
+
+.page.loaded {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0) brightness(1);
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(../img/Cool\ Backgrounds\ Particles\ Ether.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #ffffff;
+}
+
+header {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1e;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+}
+
+.lan_switch {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.lan_switch img {
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.lan_switch img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    width: 75%;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+.introduction h2 {
+    margin: auto;
+    width: 180px;
+    height: 80px;
+    padding: 40px 0 0 0;
+    font-weight: 500;
+    color: #1a1a1e;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #00bfff;
+}
+
+.introduction p {
+    width: 90%;
+
+    margin: auto;
+    padding: 20px;
+    padding-left: 30px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 16px;
+    border-left: 3px solid #00bfff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.planning h2 {
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    padding: 40px 0 0 0;
+    font-weight: 500;
+    color: #1a1a1e;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #00bfff;
+}
+
+.design {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    border-left: 3px solid #00bfff;
+}
+
+.design p {
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.styled-list {
+    list-style: none;
+    counter-reset: item-counter;
+    padding-left: 30px;
+    max-width: 600px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    line-height: 1.5;
+}
+
+.texte {
+    background-color: white;
+    box-shadow: 0 4px 4px inset;
+}
+
+.styled-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.styled-list li::before {
+    counter-increment: item-counter;
+    content: counter(item-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #00bfff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.styled-list li:last-child {
+    margin-bottom: 0;
+}
+
+.technologies-content {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    border-left: 3px solid #00bfff;
+}
+
+.technologies h2 {
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    padding: 40px 0 0 0;
+    font-weight: 500;
+    color: #1a1a1e;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #00bfff;
+}
+
+.technologies p {
+    width: 90%;
+    margin: auto;
+}
+
+.icon-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.icon-links a img {
+    width: 58px;
+    height: 58px;
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-links a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2) drop-shadow(0 0 4px #00bfff);
+}
+
+.challanges h2 {
+    margin: auto;
+    width: 280px;
+    height: 40px;
+    margin-top: 40px;
+    font-weight: 500;
+    color: #1a1a1e;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #00bfff;
+}
+
+.challanges p {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    border-left: 3px solid #00bfff;
+}
+
+.conclusion h2 {
+    margin: auto;
+    width: 325px;
+    height: 40px;
+    margin-top: 40px;
+    font-weight: 500;
+    color: #1a1a1e;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #00bfff;
+}
+
+.conclusion p {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    border-left: 3px solid #00bfff;
+}
+
+.button {
+    margin-bottom: 20px;
+}
+
+.buttonH {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.buttonH:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.6);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+    background-color: #222;
+    color: white;
+}

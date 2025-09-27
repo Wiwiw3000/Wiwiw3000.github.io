@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://kit.fontawesome.com/e3111422f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style-pl.css" type="text/css">
+    <link rel="icon" href="img/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div> 
+    <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="img/Book Open Image Resizer.png" alt="Logo Icon">
+            <span>Moje portfolio</span>
+          </a>
+      
+          <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      
+          <ul class="nav-links" id="navMenu">
+            <li><a href="#Home">Główna</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#Skills">Umiejętności</a></li>
+            <li><a href="#Procces">Proces</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li class="lan_switch">
+              <a href="index.html"><img src="https://flagcdn.com/gb.svg" alt="English" width="24"></a>
+              <a href="index-pl.html"><img src="https://flagcdn.com/pl.svg" alt="Polski" width="24"></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <main id="Home" class="page">
+        <section id="hero">
+            <h2 class="hello">Witam, jestem Sergiy Danylyuk</h2>
+            <div class="hero_content">
+                <div class="hero_content_text">
+                    <div class="texte">
+                        <p class="web-developer"><span class="ctext">Web developer</span> i student pasjonujący się projektowaniem
+                            i<br />technologią.<br />
+                            <br />
+                            Tworzę <span class="ctext">intuicyjne i stylowe produkty cyfrowe,</span> które<br />
+                            łączą w sobie kreatywność
+                            i funkcjonalność.<br />
+                            <br />
+                            Moim celem jest pomaganie firmom i osobom prywatnym w urzeczywistnianiu<br /> ich pomysłów poprzez <span
+                                class="ctext">wysokiej jakości projekt i kod.</span>
+                        </p>
+                    </div>
+                    <div class="hero_content_CV">
+                        <div class="buttonCV" id="buttonCV">
+                            <a href="files/Informatyka A4 by Sergiy Danylyuk.pdf" download class="download-button">Pobierz CV</a>
+                        </div>
+                        <img src="img/Check Circle Icon.png" alt="" class="mark" id="mark">
+                    </div>
+                </div>
+                <div class="hero_content_img">
+                    <img class="me" src="img/IMG_1806 2.JPG" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="about">O mnie</h2>
+            <div class="about_content">
+                <div class="l-column">
+                Obecnie studiuję <span class="ctext">projektowanie stron internetowych.</span><br />
+                <br />
+                Lubię tworzyć <span class="ctext">nowoczesne i responsywne strony internetowe</span><br /> przy użyciu
+                <br />
+                <br/>
+                <span class="ctext">HTML, CSS i JavaScript.</span>
+            </div>
+            <div class="r-column">
+                🎓Student w [<span class="ctext">Akademia WSEI w Lublinie</span>]<br />
+                <br />
+                💻 Pasja do programowania full-stack
+            </div>
+            </div>
+        </section>
+
+        <section id="Skills" class="skills-section">
+            <h2>Umiejętności</h2>
+
+            <div class="skills-container">
+                <div class="skill-block">
+                    <h3>Programowanie</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <h3>Języki</h3>
+                    <div class="skill">
+                        <span>Ukraiński</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angelski</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Polski</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="65%""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Procces">
+            <h2>Proces</h2>
+            <div class="procces">
+                Stworzenie tego <span class="ctext">portfolio</span> było okazją do połączenia moich
+                <span class="ctext">umiejętności technicznych</span> z minimalistycznym designem
+                podejściem do projektowania. Chciałem, aby odzwierciedlało zarówno moją osobowość, jak i mocne strony zawodowe -
+                czyste, skoncentrowane i
+                przyjazne dla użytkownika. Poniżej opisuję <span class="ctext">proces, który zastosowałem</span>,
+                od planowania i układu do kodowania i polerowania
+                ostatecznych szczegółów.
+            </div>
+            <a href="procces.html" class="buttonPr">
+                <div>
+                    Szczegóły
+                </div>
+            </a>
+        </section>
+
+        <section id="contact">
+            <h2>Skontaktuj się ze mną</h2>
+            <div class="contact_content">
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+                    <button type="submit">Przyslij</button>
+                </form>
+                <div class="social">
+                    <a href="https://www.instagram.com/"><img src="img/Instagram icon.png" alt=""></a>
+                    <a href="https://github.com/Wiwiw3000"><img src="img/Git Hub Icon.png" alt=""></a>
+                    <a href="https://telegram.org/"><img src="img/Telegram Icon.png" alt=""></a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p> 2025 Sergiy Danylyuk. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
